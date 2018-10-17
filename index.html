@@ -29,13 +29,17 @@
     $(document).ready(function () {
 
       //button on click.
-      $("#button_change").click(function() {
-
+      var button = $("#button_change");
+      $(button).click(function() {
+      // Variables
+      var input = $("#input_color");
+      var inputValue = $(input).val();
+      var element = $(".cow_color");
       //change the span with the value of the input(text area).
-      $(".cow_color").html($("#input_color").val());
+      $(element).html(inputValue);
       });
+
     });
-    
   </script>
 
 </head>
