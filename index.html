@@ -24,16 +24,16 @@
   </style>
 
   <script>
+    //when page start.
     $(document).ready(function () {
-
-      /* Your code goes here */
 
       var button = $("#button_change");
       $(button).click(function() {
-      // Actions to take upon button click goes here.
+      // variables
       var input = $("#input_color");
       var inputValue = $(input).val();
       var element = $(".cow_color");
+      //Insert in the span value of the text area.
       $(element).html(inputValue);
       });
 
