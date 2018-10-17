@@ -24,22 +24,15 @@
   </style>
 
   <script>
-
     //when page ready.
     $(document).ready(function () {
-
       //button on click.
-      var button = $("#button_change");
-      $(button).click(function() {
-      // Variables
-      var input = $("#input_color");
-      var inputValue = $(input).val();
-      var element = $(".cow_color");
+      $("#button_change").click(function() {
       //change the span with the value of the input(text area).
-      $(element).html(inputValue);
+      $(".cow_color").html($("#input_color").val());
       });
-
     });
+    
   </script>
 
 </head>
